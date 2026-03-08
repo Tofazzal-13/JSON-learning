@@ -4,11 +4,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JSON data </title>
+    <style>
+        #postContainer{
+            max-width: 1160px;
+            margin: 50px auto;
+            display: grid ;
+            grid-template-columns: repeat(3, 1fr);
+            grid-gap: 20px;
+            row-gap: 30px;
+        }
+        .post_card{
+            border: 2px solid #ddd;
+            padding: 10px;
+            border-radius: 10px;
+            box-shadow: 1px 1px 1px 1px gray;
+            height: 100%;
+        }
+        .post_card p{
+            text-align: justify;
+        }
+    </style>
 </head>
 <body>
     <button onclick="loadData()">Load Data</button>
     <button onclick="loadPost()">Load Post</button>
-    <ul id="post_contianer"></ul>
+    <h2>All Posts</h2>
+    <div id="postContainer">
+       
+    </div>
 
     <script src="js/json.js"></script>
     <script src="js/loadPost.js"></script>
