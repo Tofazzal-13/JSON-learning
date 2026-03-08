@@ -5,16 +5,3 @@ const loadData = () => {
 }
 
 
-const loadPost = () => {
-    fetch("https://jsonplaceholder.typicode.com/posts")
-    .then(res => res.json())
-    .then(data => displayPost(data)
-    )
-}
-
-
-const displayPost = (posts) => {
-    posts.forEach(post => {
-        console.log(post);  
-    }); 
-}
